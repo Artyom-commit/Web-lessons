@@ -20,6 +20,16 @@
 	<div id="app_2">
 		<p class="anim" v-if="status">{{message}}</p>
 		<button v-on:click="status=!status" v-bind:class="{ red : status}">Click me</button>
+		<button v-on:click="fun">Console</button>
+		<input type="text" v-model="inp" v-on:keyup.enter="console_inp">
+
+		<button @click="status_one = !status_one">Открыть/закрыть</button>
+		<transition name="trans">
+			<aside v-if="status_one" >
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque a, vitae sed assumenda fuga corrupti labore quam, consectetur blanditiis quas.</p>
+			</aside>
+		</transition>
+		
 	</div>
 	
 

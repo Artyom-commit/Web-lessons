@@ -1,3 +1,18 @@
 .red {
     color:red;
 }
+
+
+.trans-enter-active, .trans-leave-active {
+    transition: opacity .5s, font-size .5s;
+  }
+.trans-enter{
+    opacity: 0;
+    font-size: 20px;
+  }
+
+.trans-leave-to{
+    opacity: 0;
+    font-size: 20px;
+    
+}
