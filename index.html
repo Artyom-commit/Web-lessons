@@ -18,6 +18,7 @@
 
 	</div>
 	<div id="app_2">
+		<p class="anim" v-if="status">{{message}}</p>
 		<button v-on:click="status=!status" v-bind:class="{ red : status}">Click me</button>
 	</div>
 	
