@@ -12,7 +12,10 @@
 		<header>
 			<ul v-for="an in animals">
 				<button v-on:click="an.show=!an.show">{{ an.family }}</button>
-				<li v-if="an.show" v-for="c in an.cont"><a v-bind:href="c.href">{{ c.name}}</a></li>
+				<transition v-for="c in an.cont" name="trans">
+					<li v-if="an.show" ><a v-bind:href="c.href">{{ c.name}}</a></li>
+				</transition>
+				
 			</ul>
 		</header>
 
