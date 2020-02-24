@@ -3,13 +3,19 @@
 }
 
 
-.trans-enter-active, .trans-leave-active {
-    transition: opacity .5s, font-size .5s;
+.trans-enter-active{
+    transition: opacity 4s, font-size 4s;
   }
+
+.trans-leave-active {
+  transition: opacity .5s, font-size .5s;
+}
+
 .trans-enter{
-    opacity: 0;
-    font-size: 20px;
+    opacity: 0.2;
+    font-size: 40px;
   }
+
 
 .trans-leave-to{
     opacity: 0;
